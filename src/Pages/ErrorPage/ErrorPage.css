@@ -1,0 +1,48 @@
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  gap: 1rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.error-gif {
+  width: 220px;
+  border-radius: 50%;
+  border: 3px solid #97ce4c;
+}
+
+.error-codigo {
+  font-family: 'Creepster', cursive;
+  font-size: 5rem;
+  color: #97ce4c;
+  margin: 0;
+  line-height: 1;
+}
+
+.error-mensaje {
+  font-size: 1.2rem;
+  color: #a0aec0;
+  margin: 0;
+}
+
+.error-btn {
+  margin-top: 0.5rem;
+  padding: 0.75rem 2rem;
+  background-color: #97ce4c;
+  color: #0f0f23;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.error-btn:hover {
+  opacity: 0.85;
+}

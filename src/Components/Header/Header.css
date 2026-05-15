@@ -1,0 +1,22 @@
+header {
+  background-color: #0f0f23;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 3px solid #97ce4c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin: 0;
+  font-family: 'Creepster', cursive;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #e2e8f0;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+h1 span {
+  color: #97ce4c;
+}

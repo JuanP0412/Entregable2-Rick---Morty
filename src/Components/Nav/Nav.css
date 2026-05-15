@@ -1,0 +1,63 @@
+nav {
+  background-color: #1a1a2e;
+  border-bottom: 1px solid #2d3748;
+  padding: 0 1.5rem;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.85rem 1.1rem;
+  color: #a0aec0;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -1px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #97ce4c;
+  border-bottom-color: #97ce4c;
+}
+
+/* Botón MUI del dropdown igualado al nav */
+nav ul li button {
+  background: none !important;
+  border: 1px solid #2d3748 !important;
+  color: #a0aec0 !important;
+  font-family: 'Raleway', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  padding: 0.4rem 1rem !important;
+  border-radius: 6px !important;
+  transition: border-color 0.2s, color 0.2s !important;
+}
+
+nav ul li button:hover {
+  border-color: #97ce4c !important;
+  color: #97ce4c !important;
+}
+
+@media (max-width: 640px) {
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.5rem 0;
+  }
+}
