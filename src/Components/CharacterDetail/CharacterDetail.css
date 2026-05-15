@@ -53,9 +53,27 @@
   margin-bottom: 1rem;
 }
 
-.badge-alive { background: #97ce4c; color: #0f0f23; }
-.badge-dead  { background: #e53e3e; color: #fff; }
-.badge-unknown { background: #4a5568; color: #e2e8f0; }
+.badge-alive { 
+  background: #97ce4c; 
+  color: #0f0f23; 
+  &:hover{
+    box-shadow: 0px 0px 20px rgba(151, 206, 76, 0.25);
+  }
+}
+.badge-dead  { 
+  background: #e53e3e; 
+  color: #fff; 
+    &:hover{
+      box-shadow: 0px 0px 20px rgba(229, 62, 62, 0.25);
+    }
+}
+.badge-unknown { 
+  background: #4a5568; 
+  color: #e2e8f0; 
+  &:hover{
+    box-shadow: 0px 0px 20px rgba(74, 85, 104, 0.25);
+  }
+}
 
 .detail-grid {
   display: grid;

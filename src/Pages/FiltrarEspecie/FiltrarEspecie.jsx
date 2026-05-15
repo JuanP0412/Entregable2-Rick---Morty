@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useNavigate, useParams, useSearchParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import CardCharacter from '../../Components/CardCharacter/CardCharacter'
 import '../Characters/Characters.css'
 import Pagination from '../../Components/Pagination/Pagination'
@@ -72,8 +72,8 @@ const FiltrarEspecie = () => {
         </>
       )
       }
-      <CharacterDetail character={selectedCharacter} 
-      onClose={() => setSelectedCharacter(null)}/>
+      <CharacterDetail character={selectedCharacter}
+        onClose={() => setSelectedCharacter(null)} />
     </div>
   )
 }
