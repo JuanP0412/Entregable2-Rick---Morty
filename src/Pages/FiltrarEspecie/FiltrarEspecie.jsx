@@ -5,6 +5,7 @@ import '../Characters/Characters.css'
 import Pagination from '../../Components/Pagination/Pagination'
 import Loading from '../../Components/Loading/Loading'
 import ErrorPage from '../ErrorPage/ErrorPage'
+import CharacterDetail from '../../Components/CharacterDetail/CharacterDetail'
 
 const FiltrarEspecie = () => {
   const { specie } = useParams()
@@ -13,6 +14,7 @@ const FiltrarEspecie = () => {
   const [totalPages, setTotalPages] = useState(1)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(false)
+  const [selectedCharacter, setSelectedCharacter] = useState(null)
 
   useEffect(() => {
     setPage(1)
@@ -62,12 +64,16 @@ const FiltrarEspecie = () => {
               status={character.status}
               species={character.species}
               gender={character.gender}
-              image={character.image} />
+              image={character.image}
+              onClick={() => setSelectedCharacter(character)}
+            />
           ))}
           <Pagination page={page} setPage={setPage} totalPages={totalPages} />
         </>
       )
       }
+      <CharacterDetail character={selectedCharacter} 
+      onClose={() => setSelectedCharacter(null)}/>
     </div>
   )
 }
